@@ -1,0 +1,13 @@
+
+Import('env')
+
+sources = [
+           'register_types.cpp',
+           'ios/GoogleLogin.mm'
+           ]
+
+if env['platform'] == 'iphone':
+    env.add_source_files(env.modules_sources, sources)
+
+elif env['platform'] == 'android':
+    env.add_source_files(env.modules_sources, "*.cpp")

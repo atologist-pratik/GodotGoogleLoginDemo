@@ -1,7 +1,7 @@
 #define GoogleLogin_h
-
-#include "core/object.h"
-
+#include <core/class_db.h>
+#include <core/object.h>
+#include <core/reference.h>
 
 class GoogleGodot : public Object {
     GDCLASS(GoogleGodot, Object);

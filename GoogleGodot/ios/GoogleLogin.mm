@@ -1,7 +1,9 @@
 #import "GoogleLogin.h"
 #import "app_delegate.h"
+#import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 #import <GoogleSignIn/GoogleSignIn.h>
+
 
 
 GoogleGodot::GoogleGodot()
@@ -18,7 +20,7 @@ void GoogleGodot::init(const String& key) {
 }
 
 void GoogleGodot::loginGoogle() {
-    [[GIDSignIn sharedInstance] signIn];
+    NSLog(@"GoogleLogin XX ");
 }
 
 

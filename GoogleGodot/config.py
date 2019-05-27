@@ -1,8 +1,8 @@
 def can_build(env, plat):
-    return plat=="iphone"
+    return plat=="android" or plat=="iphone"
 
 def configure(env):
     if env['platform'] == "iphone":
         env.Append(FRAMEWORKPATH=['modules/GoogleGodot/ios/'])
-        env.Append(LINKFLAGS=['-ObjC', '-bundle', 'GoogleSignIn', '-framework', 'GoogleSignIn', '-framework', 'GoogleSignInDependencies'])
+        env.Append(LINKFLAGS=['-ObjC','-framework', 'GoogleSignIn','-framework','GoogleSignInDependencies','-framework','SafariServices','-bundle', 'GoogleSignIn'])
 	pass
